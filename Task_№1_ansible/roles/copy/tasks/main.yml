@@ -1,0 +1,16 @@
+---
+- name: Обновить кэш apt
+  apt:
+    update_cache: yes
+
+- name: Создать целевую директорию
+  file:
+    path: "{{ target_dir }}"
+    state: directory
+    mode: '0755'
+
+- name: Копирование файлов на server
+  copy:
+    src: "{{ item }}"
+    dest: "{{ target_dir }}/"
+  loop: "{{ query('fileglob', source_path) }}"

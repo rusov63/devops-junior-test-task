@@ -1,0 +1,2 @@
+target_dir: "/tmp/asyncio_copying_files_server"
+source_path: "/home/rusov/PycharmProjects/asyncio_copying_files_server/*"

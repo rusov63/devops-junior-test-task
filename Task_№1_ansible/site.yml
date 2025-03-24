@@ -1,0 +1,6 @@
+---
+- hosts: server
+  vars_files:
+    - env.yml
+  roles:
+    - copy
