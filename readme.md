@@ -79,6 +79,6 @@ docker-compose up -d --force-recreate
 
 - Вопрос: Что нравится больше docker-compose или docker-swarm?
 
-- Ответ: Что касается docker-compose vs docker-swarm - для небольших проектов и разработки использую compose как более 
+- Ответ:  Что касается docker-compose vs docker-swarm - для небольших проектов и разработки использую compose как более 
 простой инструмент. Для прода с высокой нагрузкой больше подойдут swarm или kubernetes.
 
